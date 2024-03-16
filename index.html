@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Verwaltung</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <p>
+            <!-- To-Do's abrufen -->
+            <a href="todo/get.php" class="button">Vorhandene To-Do's anzeigen</a>
+        </p>
+    </div>
+    <p>
+        <!-- Formular für To-Do's -->
+        <form action="todo/add.php" method="post">
+            <label for="name">Bezeichnung: </label><br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="desc">Beschreibung: </label><br>
+            <textarea id="desc" name="desc" rows="5" cols="33">Welche Aufgaben beinhaltet das To-Do?</textarea>
+            <br>
+            <label for="name">Angelegt von: </label><br>
+            <input type="text" id="creator" name="creator" required>
+            <br>
+            <input type="submit" value="To-Do anlegen">
+        </form>
+    </p>
+</body>
+</html>
